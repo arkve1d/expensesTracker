@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0b0b" />
+  <title>Music Graphic Design &amp; Artist Branding | SUDO Media</title>
+  <script>
+    /* Play the intro once per visit, never for reduced-motion users. */
+    (function () {
+      var d = document.documentElement, seen = false;
+      try { seen = sessionStorage.getItem('sudo-intro') === '1'; } catch (e) {}
+      var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      d.className += (seen || still) ? ' js intro-done' : ' js intro-play';
+      /* No Impact installed (Android, Linux)? Anton stands in, with its own tracking. */
+      try {
+        var c = document.createElement('canvas').getContext('2d'), t = 'GRAPHIC DESIGN';
+        c.font = '72px monospace'; var a = c.measureText(t).width;
+        c.font = '72px Impact, monospace';
+        if (c.measureText(t).width === a) d.className += ' no-impact';
+      } catch (e) {}
+      /* Safety net: never leave content hidden if landing.js fails to load. */
+      setTimeout(function () { if (!/\bready\b/.test(d.className)) d.className += ' intro-out ready'; }, 4000);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Anton only loads on devices without Impact (Android, Linux), so headlines stay on-brand everywhere. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="landing.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/branding/sudo-symbol.svg" />
+  <link rel="preload" as="image" href="assets/branding/sudo-render-angled.webp" />
+
+  <meta name="description" content="Graphic design for music artists, DJs, labels and events. Explore artist branding, single and EP cover artwork, 3D visuals and event posters by SUDO Media.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://sudomedia.uk/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SUDO Media">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Music Graphic Design &amp; Artist Branding | SUDO Media">
+  <meta property="og:description" content="Graphic design for music artists, DJs, labels and events. Explore artist branding, single and EP cover artwork, 3D visuals and event posters by SUDO Media.">
+  <meta property="og:url" content="https://sudomedia.uk/">
+  <meta property="og:image" content="https://sudomedia.uk/assets/release-design/nautika-gatehouse/never.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Music Graphic Design &amp; Artist Branding | SUDO Media">
+  <meta name="twitter:description" content="Graphic design for music artists, DJs, labels and events. Explore artist branding, single and EP cover artwork, 3D visuals and event posters by SUDO Media.">
+  <meta name="twitter:image" content="https://sudomedia.uk/assets/release-design/nautika-gatehouse/never.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://sudomedia.uk/#studio", "name": "SUDO Media", "url": "https://sudomedia.uk/", "logo": "https://sudomedia.uk/assets/branding/sudo-flat-full.png", "description": "UK graphic design studio for music artists, DJs, labels and events."}, {"@type": "WebSite", "@id": "https://sudomedia.uk/#website", "url": "https://sudomedia.uk/", "name": "SUDO Media", "publisher": {"@id": "https://sudomedia.uk/#studio"}}, {"@type": "WebPage", "@id": "https://sudomedia.uk/#page", "url": "https://sudomedia.uk/", "name": "Music Graphic Design & Artist Branding | SUDO Media", "description": "Graphic design for music artists, DJs, labels and events. Explore artist branding, single and EP cover artwork, 3D visuals and event posters by SUDO Media.", "isPartOf": {"@id": "https://sudomedia.uk/#website"}, "inLanguage": "en-GB"}]}</script>
+</head>
+<body class="landing">
+
+  <!-- Intro: the SUDO symbol draws itself, fills with the brand gradient, then the page opens. -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro-mark" viewBox="100 100 490 452">
+      <defs>
+        <linearGradient id="intro-grad" x1="0" y1="0" x2="1" y2=".35">
+          <stop offset="0" stop-color="#16c7df" /><stop offset="1" stop-color="#43ee72" />
+        </linearGradient>
+      </defs>
+      <path class="intro-stroke" pathLength="1" d="M127.01633,182.83487l57.42246-57.42378h367.5069v91.87672h-292.85731l-28.71057,28.71189v126.32967h-45.93902l-57.42246-57.42114v-132.07337ZM563.43044,469.94848l-57.42246,57.42378H127.01633v-91.87804h304.34074l28.71189-28.71057v-126.32967h45.93902l57.42246,57.42378v132.07073Z" />
+      <circle class="intro-dot" cx="345.22339" cy="326.39167" r="45.9377" />
+    </svg>
+    <div class="intro-bar"><span></span></div>
+    <p class="intro-label">SUDO MEDIA <b>·</b> LOADING VISUALS</p>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Sudo Media home"><svg class="header-wordmark" width="138" height="30" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="132 21 427 93" fill="#ffffff"><g>
+    <path d="M132.43482,34.69472l13.09475-13.09505h83.80713v20.95178h-66.78386l-6.54722,6.54753v28.80851h-10.47604l-13.09475-13.09445v-30.11832ZM231.95571,100.16877l-13.09475,13.09505h-86.42614v-20.95208h69.40257l6.54753-6.54722v-28.80851h10.47604l13.09475,13.09505v30.11772Z" />
+    <circle class="wordmark-dot" cx="182.19526" cy="67.43174" r="10.47574" />
+    <path d="M264.69093,92.31174h43.21307l6.54722-6.54722V21.59967h23.57109v78.56911l-13.09505,13.09505h-70.71238l-13.09475-13.09505V21.59967h23.57079v70.71207Z" />
+    <path d="M458.49137,21.59967h86.42614l13.09445,13.09505v78.56911h-86.42553l-13.09505-13.09505V21.59967ZM482.06186,42.55145v43.21307l6.54783,6.54722h45.83178v-43.21277l-6.54722-6.54753h-45.83238Z" />
+    <polygon points="434.92206 21.59968 349.80518 21.59968 349.80518 40.09101 349.80518 42.55146 349.80518 61.0428 370.75696 61.0428 370.75696 42.55146 419.20801 42.55146 425.75586 49.09895 425.75586 85.76448 419.20801 92.31172 360.53125 92.31172 351.36499 101.47859 351.36499 113.2638 434.92206 113.2638 448.01715 100.16877 448.01715 34.69471 434.92206 21.59968" />
+  </g>
+  </svg></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="graphics">Graphics</a><a href="photography">Photography</a><a class="nav-about" href="./#about">About</a></nav>
+    <a class="mini-cta magnetic" href="contact"><span>Start a project</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-render" aria-hidden="true">
+        <div class="hero-orbit"><span></span><span></span><span></span></div>
+        <img src="assets/branding/sudo-render-angled.webp" alt="" width="1080" height="1080" decoding="async" fetchpriority="high" />
+      </div>
+
+      <div class="hero-inner">
+        <p class="eyebrow hero-eyebrow" data-intro="0"><span></span> SUDO MEDIA · INDEPENDENT DESIGN STUDIO</p>
+
+        <h1 class="hero-title" aria-label="Graphic design for music">
+          <span class="line" aria-hidden="true"><span data-intro="1">GRAPHIC</span></span>
+          <span class="line" aria-hidden="true"><span data-intro="2">DESIGN</span></span>
+          <span class="line" aria-hidden="true"><em data-intro="3">FOR MUSIC</em></span>
+        </h1>
+        <p class="lede" data-intro="4">Artist branding, release cover artwork and 3D visuals for DJs, producers, record labels and music events. UK-based, with a focus on electronic music and drum &amp; bass.</p>
+        <div class="hero-actions" data-intro="5"><a class="button primary magnetic" href="contact"><span>Make an enquiry</span></a><a class="button ghost magnetic" href="#work"><span>Explore portfolio</span></a></div>
+      </div>
+
+      <div class="hero-meta" data-intro="6" aria-hidden="true">
+        <div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <span>UK <b>·</b> DRUM &amp; BASS <b>·</b> 174 BPM</span>
+      </div>
+      <a class="scroll-cue" href="#work" data-intro="6"><span>Scroll</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="service-strip ticker" aria-label="Studio services">
+      <div class="ticker-track">
+        <span>Artist branding</span><span>Release artwork</span><span>3D &amp; motion</span><span>Event design</span>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section-head">
+        <p class="eyebrow reveal">PORTFOLIO</p>
+        <h2 class="split">Find your<br><em>kind of work.</em></h2>
+        <p class="reveal">Choose graphics or photography to explore the work and find the right service for your next project.</p>
+      </div>
+      <div class="portfolio-choices">
+        <a class="browse-card tilt reveal" href="graphics"><div class="browse-image"><img src="assets/optimised/release-design/nautika-gatehouse/never-1920.webp" alt="NEVER by Nautika and Gatehouse — cover artwork following First Request Records branding" srcset="assets/optimised/release-design/nautika-gatehouse/never-640.webp 640w, assets/optimised/release-design/nautika-gatehouse/never-1280.webp 1280w, assets/optimised/release-design/nautika-gatehouse/never-1920.webp 1920w" sizes="(max-width: 800px) 100vw, 50vw" width="2048" height="2048" loading="lazy" decoding="async"></div><div class="browse-copy"><span class="browse-index">01</span><h3>Graphics</h3><p>Artist branding, release artwork and event posters.</p><span class="browse-action">Explore graphics <span aria-hidden="true">↗</span></span></div></a>
+        <a class="browse-card tilt reveal" href="photography"><div class="browse-image"><img src="assets/optimised/hero-art-1320.webp" alt="" loading="lazy" srcset="assets/optimised/hero-art-640.webp 640w, assets/optimised/hero-art-1280.webp 1280w, assets/optimised/hero-art-1320.webp 1320w" sizes="(max-width: 800px) 100vw, 50vw" width="1320" height="876" decoding="async"></div><div class="browse-copy"><span class="browse-index">02</span><h3>Photography</h3><p>Artist photography and live music.</p><span class="browse-action">Explore photography <span aria-hidden="true">↗</span></span></div></a>
+      </div>
+    </section>
+
+    <!-- Moving reel of real client work. JS clones each track so it loops seamlessly. -->
+    <section class="showcase" aria-labelledby="showcase-title">
+      <div class="showcase-head">
+        <p class="eyebrow reveal"><span></span> SELECTED WORK</p>
+        <h2 id="showcase-title" class="showcase-title reveal">Covers, logos &amp; lineups <em>on rotation.</em></h2>
+        <a class="text-link reveal" href="graphics">View the graphics portfolio ↗</a>
+      </div>
+      <div class="reel" data-direction="left">
+        <div class="reel-track">
+          <a class="reel-item" href="projects/release-design-never"><img src="assets/optimised/release-design/nautika-gatehouse/never-640.webp" alt="NEVER by Nautika and Gatehouse cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Never</b>Release artwork</span></a>
+          <a class="reel-item" href="projects/artist-identity-project-01"><img src="assets/optimised/kruza/kruza-social-profile-picture-640.webp" alt="KRUZA artist identity artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Kruza</b>Artist identity</span></a>
+          <a class="reel-item" href="release-design-oblixion"><img src="assets/optimised/release-design/oblixion/reflections-640.webp" alt="Reflections by OBLIXION cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Reflections</b>Release artwork</span></a>
+          <a class="reel-item tall" href="projects/event-media-project-01"><img src="assets/optimised/event-media/c-side/c-side-dnb-lineup-640.webp" alt="C-SIDE DnB lineup poster" width="640" height="800" loading="lazy" decoding="async"><span class="reel-cap"><b>C-Side</b>Event poster</span></a>
+          <a class="reel-item" href="projects/artist-identity-project-02"><img src="assets/optimised/psyclone/psyclone-social-pic-640.webp" alt="PSYCLONE artist identity with neon pink 3D logo" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Psyclone</b>3D identity</span></a>
+          <a class="reel-item" href="release-design-rezin"><img src="assets/optimised/release-design/rezin/elevation-640.webp" alt="Elevation by REZIN cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Elevation</b>Release artwork</span></a>
+          <a class="reel-item" href="projects/artist-identity-project-04"><img src="assets/optimised/static/static-logo-presentation-640.webp" alt="STATIC artist identity logo presentation" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Static</b>Artist identity</span></a>
+        </div>
+      </div>
+      <div class="reel" data-direction="right">
+        <div class="reel-track">
+          <a class="reel-item" href="release-design-oblixion"><img src="assets/optimised/release-design/oblixion/by-my-side-640.webp" alt="By My Side by OBLIXION cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>By My Side</b>Release artwork</span></a>
+          <a class="reel-item" href="projects/artist-identity-project-05"><img src="assets/optimised/rig-raiderz/rig-raiderz-social-pfp-1-640.webp" alt="RIG RAIDERZ artist identity artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Rig Raiderz</b>Artist identity</span></a>
+          <a class="reel-item" href="release-design-upgrade"><img src="assets/optimised/release-design/upgrade/upgrades-archive-dubpack-vol-1-640.webp" alt="UPGRADE'S ARCHIVE DUBPACK VOL. 1 cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Upgrade's Archive</b>Release artwork</span></a>
+          <a class="reel-item" href="projects/artist-identity-project-06"><img src="assets/optimised/insomnia-events/insomnia-events-logo-1-640.webp" alt="INSOMNIA EVENTS identity logo" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Insomnia Events</b>Event identity</span></a>
+          <a class="reel-item" href="release-design-rezin"><img src="assets/optimised/release-design/rezin/scream-640.webp" alt="Scream by REZIN cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Scream</b>Release artwork</span></a>
+          <a class="reel-item tall" href="projects/event-media-project-01"><img src="assets/optimised/event-media/c-side/c-side-roof-terrace-640.webp" alt="C-SIDE roof terrace lineup poster" width="640" height="800" loading="lazy" decoding="async"><span class="reel-cap"><b>C-Side</b>Roof terrace lineup</span></a>
+          <a class="reel-item" href="release-design-drift"><img src="assets/optimised/release-design/drift/girls-show-me-a-lighter-640.webp" alt="Girls / Show Me A Lighter by DRIFT cover artwork" width="640" height="640" loading="lazy" decoding="async"><span class="reel-cap"><b>Girls / Show Me A Lighter</b>Release artwork</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-head compact">
+        <p class="eyebrow reveal"><span></span> DESIGN SERVICES</p>
+        <h2 class="split">From the first logo<br><em>to the next release.</em></h2>
+      </div>
+      <div class="service-list">
+        <div class="reveal" data-preview="assets/optimised/kruza/kruza-social-profile-picture-640.webp"><b>01</b><h3>Brand Identity</h3><p>Custom artist logos and visual identities for releases, profiles and promotion.</p><span class="service-arrow" aria-hidden="true">↗</span></div>
+        <div class="reveal" data-preview="assets/optimised/kruza/kruza-3d-logo-640.webp"><b>02</b><h3>3D &amp; Motion</h3><p>Looping visuals, VJ assets, animated identities and release teasers.</p><span class="service-arrow" aria-hidden="true">↗</span></div>
+        <div class="reveal" data-preview="assets/optimised/event-media/c-side/c-side-main-room-640.webp"><b>03</b><h3>Content &amp; Campaigns</h3><p>Coordinated artwork for release announcements, lineups and social posts.</p><span class="service-arrow" aria-hidden="true">↗</span></div>
+        <div class="reveal" data-preview="assets/optimised/hero-art-640.webp"><b>04</b><h3>Photo &amp; Video</h3><p>Artist photography and event coverage for music promotion.</p><span class="service-arrow" aria-hidden="true">↗</span></div>
+      </div>
+      <div class="service-preview" aria-hidden="true"><img alt="" /></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-card reveal">
+        <div class="about-copy">
+          <p class="eyebrow"><span></span> ABOUT SUDO</p>
+          <h2 class="split">Rooted in<br><em>drum &amp; bass.</em></h2>
+          <p>SUDO Media is an independent UK design studio working with electronic music artists, labels and promoters. Drum &amp; bass is at the centre of the work: artist logos, cover artwork, event posters and 3D visuals, developed around the music and the people behind it.</p>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <svg class="about-rings" viewBox="0 0 400 400">
+            <defs>
+              <linearGradient id="ring-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#16c7df" /><stop offset="1" stop-color="#43ee72" />
+              </linearGradient>
+            </defs>
+            <circle class="ring r1" cx="200" cy="200" r="188" />
+            <circle class="ring r2" cx="200" cy="200" r="158" />
+            <circle class="ring r3" cx="200" cy="200" r="128" />
+          </svg>
+          <svg class="about-mark" viewBox="100 100 490 452">
+            <path pathLength="1" d="M127.01633,182.83487l57.42246-57.42378h367.5069v91.87672h-292.85731l-28.71057,28.71189v126.32967h-45.93902l-57.42246-57.42114v-132.07337ZM563.43044,469.94848l-57.42246,57.42378H127.01633v-91.87804h304.34074l28.71189-28.71057v-126.32967h45.93902l57.42246,57.42378v132.07073Z" />
+            <circle cx="345.22339" cy="326.39167" r="45.9377" />
+          </svg>
+          <div class="eq eq-large"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-ghost" aria-hidden="true"><div><span>SUDO MEDIA — START A PROJECT — SUDO MEDIA — START A PROJECT — </span><span>SUDO MEDIA — START A PROJECT — SUDO MEDIA — START A PROJECT — </span></div></div>
+      <p class="eyebrow dark reveal"><span></span> HAVE A PROJECT IN MIND?</p>
+      <h2 class="split">YOUR NEXT<br><em>RELEASE STARTS HERE.</em></h2>
+      <a class="email reveal" href="mailto:contact@sudomedia.uk">CONTACT@SUDOMEDIA.UK</a>
+      <a class="button dark-btn magnetic reveal" href="contact"><span>Make an enquiry</span> <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><img src="assets/branding/sudo-full.svg" alt="" /><p>© 2026 Sudo Media.</p><a href="#top">Back to top ↑</a><nav class="service-navigation" aria-label="Portfolio navigation"><a href="graphics">Graphics portfolio</a><a href="photography">Photography</a><a href="contact">Contact SUDO</a></nav></footer>
+  <script src="landing.js" defer></script>
+</body>
+</html>
