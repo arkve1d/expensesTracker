@@ -73,13 +73,6 @@
   animation:render-float 7s ease-in-out infinite,render-pulse var(--beat) ease-out infinite}
 @keyframes render-float{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-18px) rotate(1.5deg)}}
 @keyframes render-pulse{0%{filter:brightness(1.18) saturate(1.1)}35%,100%{filter:brightness(1) saturate(1)}}
-.hero-orbit{position:absolute;inset:8%;transform:rotateX(68deg) rotateZ(-18deg);transform-style:preserve-3d}
-.hero-orbit span{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(109,236,208,.16);animation:orbit 18s linear infinite}
-.hero-orbit span:nth-child(2){inset:9%;border-color:rgba(22,199,223,.14);animation-duration:12s;animation-direction:reverse}
-.hero-orbit span:nth-child(3){inset:-9%;border-style:dashed;border-color:rgba(67,238,114,.1);animation-duration:30s}
-.hero-orbit span:before{content:"";position:absolute;top:50%;left:-4px;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 18px 4px rgba(67,238,114,.6)}
-.hero-orbit span:nth-child(2):before{background:var(--cyan);box-shadow:0 0 16px 3px rgba(22,199,223,.6);left:auto;right:-4px}
-.hero-orbit span:nth-child(3):before{display:none}
 @keyframes orbit{to{transform:rotate(360deg)}}
 
 .landing .hero-inner{width:min(1160px,100%)}
